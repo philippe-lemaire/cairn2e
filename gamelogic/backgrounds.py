@@ -3,7 +3,7 @@ backgrounds = [
     "Barber-Surgeon",
     "Beast Handler",
     "Bone Keeper",
-    "PILOT",
+    "Cutpurse",
     "MACHINE",
     "UNDERWORLD",
     "PSIONIC",
@@ -267,100 +267,73 @@ gift of life, we must honor its finale as well.""",
     ],
 ]
 
-dossier_pilot = [
+cutpurse_tables = [
     {
-        "name": "Suited Up",
+        "name": "What was your last big job?",
         "options": {
-            1: """<b>Deluxe Array:</b> Holo-shades (improve visuals in darkness, look slick), armor-lined red
-jacket (1 Armor), and 2 blasters (D6), pack of alien cigars (blue smoke)""",
-            2: """<b>Alien Companion:</b> Generate a retainer (merc) with one unique feature befitting an alien
-species (alternatively can be a droid or other non-human.)""",
-            3: """<b>Exo-Skin Suit:</b> (1 armor) Nanotech morph suit, conforms to your body, wear under your
-regular clothes. Has a built in grappling gun and rebreather mask.""",
-            4: """<b>Stylin’:</b> Take a dashing outfit and cloak, silver-plated blaster (d6, replace starting
-weapon) and a thermal detonator (d6, blast, thermal).""",
-            5: """<b>Committed to Flying:</b> Take a datajack implant (Cerebral Socket). Installs the back of
-your head with a jack that allows you to plug into vehicles to more rapidly access special
-systems and data.""",
-            6: """<b>Just the Essentials:</b> Take a leather jacket, a stun gun and a retractable baton (D6,
-concealable)""",
+            1: """A noble’s summer home. The place was full of fancy wine (+20gp) but not much else. Take <b>Fence Cutters</b>.""",
+            2: """A bank (you were caught). You bear a brand only visible by firelight, and
+anyone that sees the mark can ask you for a beer. Take <b>Retractable Wires</b>.""",
+            3: """A guild warehouse. Take a <b>Ladder</b> (<em>bulky</em>, 10ft) and <b>Blinding Powder</b> (1 use).""",
+            4: """
+Moneylender. Someone beat you to the job, but left behind a <b>Scroll</b> of
+<em>Arcane Eye</em> (petty).
+<em><b>Arcane Eye</b></em>: You can see through a magical floating eyeball that flies around at your command.""",
+            5: """Constable’s quarters. You escaped, but left some friends behind. Take
+<b>Strong Silk Rope</b> and a queasy feeling.""",
+            6: """A university. You were seen, but not pursued. You still don’t know why.
+Take <b>Smoke Pellets</b> (3 uses).""",
         },
     },
     {
-        "name": "Flying Expertise",
+        "name": "What helps you steal?",
         "options": {
-            1: """<b>Captain:</b> You have experience
-leading, and either through
-admiration or fear, others find
-your presence to be motivational
-in dire circumstances.""",
-            2: """<b>Astro-Navigator:</b> You know your
-way around space. You never
-get lost in space and always get
-around fast.""",
-            3: """<b>Ace:</b> You always have a few fancy
-moves when you’re in the pilot
-seat. When you pull off a daring
-move the results tend to go in
-your favor, at least on the first try
-of the day.""",
-            4: """<b>Union Licensed:</b> It was an
-honest living. Other pilots respect
-that. You get union discounts for
-yourself and friends with starport
-docking, lodging, and buying
-anything starship related.""",
-            5: """<b>Syndicate Contractor:</b>
-Any reaction rolls or social
-encounters with professional
-syndicates are one category
-higher, or more favorable in
-another abstract way.""",
-            6: """<b>Test Pilot:</b> You can pilot anything,
-and are experienced at operating
-vehicles that are damaged or
-partially broken. If your ship
-takes critical damage, delay the
-negative effects for 1D4 rounds.""",
-        },
-    },
-    {
-        "name": "Other Talents",
-        "options": {
-            1: """<b>Hot-Wiring:</b> You know how
-to cross the right wires to get
-vehicles running that don’t
-belong to you.""",
-            2: """<b>Hard Turns:</b> Gain an additional
-point of mobility in any starship
-you’re piloting.""",
-            3: """<b>Lead Foot:</b> Gain an additional
-point of movement in any
-starship you’re piloting.""",
-            4: """<b>Energy Efficient:</b> You know how
-to turn dashboard systems on-and-off in such a way that your
-shields have an additional +1.""",
-            5: """<b>Counter Tactics:</b> If you lose
-initiative at the start of starship
-combat, the first attack your ship
-makes will be enhanced.""",
-            6: """<b>Witty Banter:</b> During starship
-combat, hilarious yelling or witty
-banter with a co-pilot or onboard
-A.I. allows you to automatically
-succeed on a single critical
-damage save a day.""",
+            1: """<b>Catring</b> 2 charges. Climb up walls and fall safely. Recharge: Place the ring on a stray cat’s tail.""",
+            2: """<b>Gildfinger</b> 1 charge. A finger glove that mimics any mundane key.
+Recharge: Bundle it with at least 100gp for a night.""",
+            3: """<b>Glimpse
+Glass</b> 3 charges. A monocle that lets you see through walls or
+other obstructions. It shatters after the last use.""",
+            4: """<b>Sweetwhistle1 charge</b>. Listeners hear a soft, familiar voice in the
+distance that they cannot resist following. Recharge: Lose
+a dear memory (describe it).""",
+            5: """<b>Vagrant’s
+Veil</b> 1 charge. Wear it to blend seamlessly into crowds,
+appearing as a simple pauper. Recharge: Donate all the
+day’s winnings to the poor (Petty).""",
+            6: """<b>Smokestack
+Marble</b> 3 uses. Crush to release a dense cloud of smoke that
+follows you (Petty).""",
         },
     },
     # starting gear
     [
-        "Mag-boots",
-        "Junky blaster (D6, cheap, mid-range)",
-        "<b>GM Optional</b>, start with a small Starship. Make it impounded or in need of repairs.",
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Twin Daggers (d6+d6, bulky)",
+        "Padded Leather (1 Armor)",
+        "Lockpicks",
+        "Black Outfit (petty)",
     ],
     # profile
-    """You feel most comfortable behind the controls of a starship. Quick reflexes and
-situational awareness make you an asset in many situations.""",
+    """You live in the grey space between those who have power and
+those who don’t. You find opportunity where others see
+only chaos. With nimble fingers, you unburden both the
+richest merchant and the lowliest guard.""",
+    # names
+    [
+        "Sable",
+        "Lyra",
+        "Eamon",
+        "Salina",
+        "Elara",
+        "Freya",
+        "Isolde",
+        "Sparrow",
+        "Ivy",
+        "Silas",
+    ],
 ]
 
 dossier_machine = [
@@ -777,7 +750,7 @@ BACKGROUND_TABLES = {
     "Barber-Surgeon": barber_surgeon_tables,
     "Beast Handler": beast_handler_tables,
     "Bone Keeper": bonekeeper_tables,
-    "PILOT": dossier_pilot,
+    "Cutpurse": cutpurse_tables,
     "MACHINE": dossier_machine,
     "UNDERWORLD": dossier_underworld,
     "PSIONIC": dossier_psionic,
