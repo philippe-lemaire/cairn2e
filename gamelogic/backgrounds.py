@@ -1,7 +1,7 @@
 backgrounds = [
     "Aurifex",
     "Barber-Surgeon",
-    "ENGINEER",
+    "Beast Handler",
     "SMUGGLER",
     "PILOT",
     "MACHINE",
@@ -31,13 +31,11 @@ aurifex_tables = [
             1: "<b>Pyrophoric Gel:</b> A sticky green fluid that catches fire when exposed to air, then burns for 8 hours. Cannot be extinguished (1 use).",
             2: "<b>Blast Sphere</b>: A head-sized iron ball filled with explosive powder that explodes on impact (d12, blast, bulky, 1 use).",
             3: "<b>Aqua Vita</b>: Purifies any liquid, converting it to pure water. Drinking it cures 1d6 STR (1 use).",
-            4 : "<b>Mimic Stone</b>: Records a short phrase that can later be played back.",
+            4: "<b>Mimic Stone</b>: Records a short phrase that can later be played back.",
             5: "<b>Spark Dust</b>: Ignites easily and quickly. Useful for starting a fire or as an incendiary device (3 uses).",
-            6: "<b>Homunculus</b>: A miniature clay replica of yourself that follows your every command to the letter. It hates being enthralled to you and complains bitterly whenever possible. Any damage done to the homunculus is also done to you."
-
+            6: "<b>Homunculus</b>: A miniature clay replica of yourself that follows your every command to the letter. It hates being enthralled to you and complains bitterly whenever possible. Any damage done to the homunculus is also done to you.",
         },
     },
-
     [
         "3d6 Gold Pieces",
         "Rations (3 uses)",
@@ -45,91 +43,98 @@ aurifex_tables = [
         "Oil Can (6 uses)",
         "Needle-Knife (d6)",
         "Protective Gloves (petty)",
-],
+    ],
     # profile
     """You are an artisan of the arcane, a smith of subtle forces. In the crucible of your
 workshop, the laws that govern this world are warped to suit your needs.""",
     # names
     [
-    "Hestia",
-    "Basil",
-    "Rune",
-    "Prism",
-    "Ember",
-    "Quintess",
-    "Aludel",
-    "Mordant",
-    "Salaman",
-    "Jazia",
-]
-
+        "Hestia",
+        "Basil",
+        "Rune",
+        "Prism",
+        "Ember",
+        "Quintess",
+        "Aludel",
+        "Mordant",
+        "Salaman",
+        "Jazia",
+    ],
 ]
 
 barber_surgeon_tables = [
     {
         "name": "How have you “improved” yourself?",
         "options": {
-          1: """You have a replacement eye that can magnify objects, acts as a telescope,
+            1: """You have a replacement eye that can magnify objects, acts as a telescope,
 and provides minimal night vision. You cannot wear anything metal on
 your head, and strong magnets make you deprived.""",
-2: """One foot is mostly metal (kick, d6), and you treat some Tough Terrain
+            2: """One foot is mostly metal (kick, d6), and you treat some Tough Terrain
 as Easy. Carry an Oil Can (6 uses). Without a daily application you are
 deprived and noisy.""",
-3: """One of your fingers has been swapped, the bone replaced by gold and
+            3: """One of your fingers has been swapped, the bone replaced by gold and
 iron. Take a Hook and a Screwdriver that can attach to the fingertip.""",
-4: """Both ears have been surgically enhanced, tripling your hearing. You can
+            4: """Both ears have been surgically enhanced, tripling your hearing. You can
 focus on a specific sound at a great distance, such as a conversation. You
 wear an ear flap to protect against sudden loud noises (WIL save to avoid
 temporary paralysis).""",
-5: """Your chest is lined with alchemical sigils, toughening the skin (1 Armor).
+            5: """Your chest is lined with alchemical sigils, toughening the skin (1 Armor).
 Wearing other metallic armor nullifies the effect.""",
-6: """One arm is fully metal, and comes off at the shoulder. It can be used as a
+            6: """One arm is fully metal, and comes off at the shoulder. It can be used as a
 weapon (d8, bulky when not attached) and can move independently if you
 are within sight of it.""",
-
         },
     },
     {
         "name": "What rare tool is essential to your work?",
         "options": {
-          1: """Regrowth
+            1: """Regrowth
 SalveRegrows a body part over the course of a day (1 use).""",
-2: """GraftgrubA small worm that can fuse inanimate objects with parts
+            2: """GraftgrubA small worm that can fuse inanimate objects with parts
 of the body (1 use).""",
-3: """WoundwaxHeals wounds from fire or chemicals (restoring full STR),
+            3: """WoundwaxHeals wounds from fire or chemicals (restoring full STR),
 but nothing else (2 uses).""",
-4: """QuicksilverA stimulant. Go first in combat, and automatically pass any
+            4: """QuicksilverA stimulant. Go first in combat, and automatically pass any
 WIL saves for one hour. Addictive: Save STR or become
 deprived after 24 hours without it (4 uses).""",
-5: """Pneuma
+            5: """Pneuma
 PumpPortable iron lungs (bulky). Enables life-saving surgery, or
 underwater breathing.""",
-6: """LodestoneDraws out dangerous elements from the body, and acts as
+            6: """LodestoneDraws out dangerous elements from the body, and acts as
 a powerful magnetic force.""",
         },
     },
-
-
     # starting gear
-    ["3d6 Gold Pieces",
-"Rations (3 uses)",
-"Torch (3 uses)",
-"Amputation Knife (d6)",
-"Bandages (3 uses)",
-"Leech (restores 1 STR, 3 uses)",
-"Stained Medical Finery (petty)",
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Amputation Knife (d6)",
+        "Bandages (3 uses)",
+        "Leech (restores 1 STR, 3 uses)",
+        "Stained Medical Finery (petty)",
     ],
     # profile
     """You walk the line between healer and harrower, knowing the frailty of the flesh
 but also the secrets that lay within. With the right tools, life and death are merely
 words.""",
     # names
-    ["Wilmot", "Patch", "Lancet", "Sawbones", "Theo", "Cutwell", "Humor", "Landsford", "Goodeye", "Johanna",]
-
+    [
+        "Wilmot",
+        "Patch",
+        "Lancet",
+        "Sawbones",
+        "Theo",
+        "Cutwell",
+        "Humor",
+        "Landsford",
+        "Goodeye",
+        "Johanna",
+    ],
 ]
 
 
-dossier_engineer = [
+beast_handler_tables = [
     {
         "name": "Pet Project",
         "options": {
@@ -221,6 +226,19 @@ breathable substances.""",
     # profile
     """You’ve built a career around being handy. You’re skilled at repairing and maintaining
 mechanical structures and devices.""",
+    # names
+    [
+        "Amara",
+        "Wulf",
+        "Mireille",
+        "Soren",
+        "Freki",
+        "Aster",
+        "Gerrik",
+        "Boreas",
+        "Delphine",
+        "Matheus",
+    ],
 ]
 
 dossier_smuggler = [
@@ -834,7 +852,7 @@ wolves from the door. You made your living as a licensed bounty hunter.""",
 BACKGROUND_TABLES = {
     "Aurifex": aurifex_tables,
     "Barber-Surgeon": barber_surgeon_tables,
-    "ENGINEER": dossier_engineer,
+    "Beast Handler": beast_handler_tables,
     "SMUGGLER": dossier_smuggler,
     "PILOT": dossier_pilot,
     "MACHINE": dossier_machine,
