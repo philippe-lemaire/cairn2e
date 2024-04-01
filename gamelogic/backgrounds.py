@@ -1,6 +1,6 @@
 backgrounds = [
     "Aurifex",
-    "HUMAN EXPERIMENT",
+    "Barber-Surgeon",
     "ENGINEER",
     "SMUGGLER",
     "PILOT",
@@ -65,105 +65,67 @@ workshop, the laws that govern this world are warped to suit your needs.""",
 
 ]
 
-dossier_human_experiment = [
+barber_surgeon_tables = [
     {
-        "name": "Side-Effects",
+        "name": "How have you “improved” yourself?",
         "options": {
-            1: """"<b>Exothermic Lungs:</b> Exhale a superheated spray of plasma (D10 blast, thermal).
-Costs 1 fatigue""",
-            2: "<b>Magnetism</b> Manipulate metal objects up to 100 lbs with your mind. Costs 1 fatigue.",
-            3: "<b>Ghost Skin</b> Willingly phase through solid objects up to 3 feet thick. Costs 1 fatigue.",
-            4: """<b>Elasticity</b> Your arms and hands can stretch and change form up to 20 sq feet or 60 feet
-in length.""",
-            5: "<b>Biomimicry</b> Change or alter your face and skin once a day.",
-            6: """<b>Ultra-Conductive</b> You can discharge, locally disrupting all nearby computers and
-circuitry once a day. Immune to electricity and EMP damage.""",
+          1: """You have a replacement eye that can magnify objects, acts as a telescope,
+and provides minimal night vision. You cannot wear anything metal on
+your head, and strong magnets make you deprived.""",
+2: """One foot is mostly metal (kick, d6), and you treat some Tough Terrain
+as Easy. Carry an Oil Can (6 uses). Without a daily application you are
+deprived and noisy.""",
+3: """One of your fingers has been swapped, the bone replaced by gold and
+iron. Take a Hook and a Screwdriver that can attach to the fingertip.""",
+4: """Both ears have been surgically enhanced, tripling your hearing. You can
+focus on a specific sound at a great distance, such as a conversation. You
+wear an ear flap to protect against sudden loud noises (WIL save to avoid
+temporary paralysis).""",
+5: """Your chest is lined with alchemical sigils, toughening the skin (1 Armor).
+Wearing other metallic armor nullifies the effect.""",
+6: """One arm is fully metal, and comes off at the shoulder. It can be used as a
+weapon (d8, bulky when not attached) and can move independently if you
+are within sight of it.""",
+
         },
     },
     {
-        "name": "Type of Experiment",
+        "name": "What rare tool is essential to your work?",
         "options": {
-            1: """<b>Grown in a Tube:</b> You are the
-product of scientific brilliance.
-You’ve only seen the outside
-world while floating inside a vat
-of life-sustaining fluid.""",
-            2: """<b>Brain Stress:</b> They hooked your
-brain up with wires and pushed
-your mind to the limits. You know
-one random Psionic power.""",
-            3: """<b>Nanobot Infusion:</b> Some type
-of prototype serum was injected
-into your bloodstream. Your
-body can naturally heal 1D4 STR
-damage a day.""",
-            4: """<b>Gene-Splicing:</b> Bio-Engineering
-via illegal methods made your
-body more hardy and adaptable.
-You naturally have 1 armor.""",
-            5: """<b>Ghost-Shell:</b> You are a recently
-re-animated or unwilling
-consciousness implanted into
-a synthetic body. You know one
-random Astromancy from your
-previous life. Your memory is
-slowly returning in pieces...""",
-            6: """<b>6 Billion Credit Person:</b> You
-were a pet project of some
-unknown billionaire. They were
-attempting to create a perfect
-specimen. The project was
-considered a partial failure.
-Increase one Ability Score to 16.""",
+          1: """Regrowth
+SalveRegrows a body part over the course of a day (1 use).""",
+2: """GraftgrubA small worm that can fuse inanimate objects with parts
+of the body (1 use).""",
+3: """WoundwaxHeals wounds from fire or chemicals (restoring full STR),
+but nothing else (2 uses).""",
+4: """QuicksilverA stimulant. Go first in combat, and automatically pass any
+WIL saves for one hour. Addictive: Save STR or become
+deprived after 24 hours without it (4 uses).""",
+5: """Pneuma
+PumpPortable iron lungs (bulky). Enables life-saving surgery, or
+underwater breathing.""",
+6: """LodestoneDraws out dangerous elements from the body, and acts as
+a powerful magnetic force.""",
         },
     },
-    {
-        "name": "How Did You Escape?",
-        "options": {
-            1: """<b>Violently,</b> by turning your powers
-on your captors. Take a bloody
-scalpel (D6)""",
-            2: """<b>Furtively,</b> you somehow
-managed to sneak out in the
-dead of night. Take stolen
-records worth 4d8 credits on the
-black market and notes on how
-to find them.""",
-            3: """<b>Benevolently,</b> an unknown figure
-unlocked your restraints while
-nobody was there. When you
-woke up, your escape was wide
-open. Take a mysterious business
-card.""",
-            4: """<b>Inexplicably,</b> incomprehensible
-quantum displacement shifted
-you somewhere completely
-random. Take a random weapon
-(Roll 1D4). 1-2: small melee, 3:
-stun gun, 4: junky blaster.""",
-            5: """<b>Compliantly:</b> You didn’t need to
-escape, the experiment suddenly
-ended and you were released
-in the middle of nowhere, with
-no way of knowing who had
-experimented on you. Your
-account now has 2,000 credits as
-payment.""",
-            6: """<b>Cargo Mix-up:</b> You were being
-shipped somewhere and
-the manifests got mixed up.
-Someone found you and let you
-go. The original experimenter is
-still looking for you. Take 1D6
-random drugs or contraband
-items.""",
-        },
-    },
+
+
     # starting gear
-    ["Cloak (Hooded)", "Flashlight", "Tattoo (Serial Number or Bar Code)"],
+    ["3d6 Gold Pieces",
+"Rations (3 uses)",
+"Torch (3 uses)",
+"Amputation Knife (d6)",
+"Bandages (3 uses)",
+"Leech (restores 1 STR, 3 uses)",
+"Stained Medical Finery (petty)",
+    ],
     # profile
-    """You have been the subject of unethical and experimental scientific tinkering.
-There were some side effects. You recently managed to escape.""",
+    """You walk the line between healer and harrower, knowing the frailty of the flesh
+but also the secrets that lay within. With the right tools, life and death are merely
+words.""",
+    # names
+    ["Wilmot", "Patch", "Lancet", "Sawbones", "Theo", "Cutwell", "Humor", "Landsford", "Goodeye", "Johanna",]
+
 ]
 
 
@@ -871,7 +833,7 @@ wolves from the door. You made your living as a licensed bounty hunter.""",
 
 BACKGROUND_TABLES = {
     "Aurifex": aurifex_tables,
-    "HUMAN EXPERIMENT": dossier_human_experiment,
+    "Barber-Surgeon": barber_surgeon_tables,
     "ENGINEER": dossier_engineer,
     "SMUGGLER": dossier_smuggler,
     "PILOT": dossier_pilot,
