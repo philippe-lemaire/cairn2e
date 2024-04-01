@@ -1,0 +1,10 @@
+from django.urls import path
+
+from . import views
+
+app_name = "chargen"
+
+urlpatterns = [
+    path("random", views.generate_character, name="generate_character"),
+    path("choice", views.generate_with_background, name="generate_with_background"),
+]
