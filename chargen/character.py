@@ -43,15 +43,7 @@ class Character:
             list(self.dossier_part2.get("options").values())
         )
 
-        self.common_gear = [
-            "3d6 Gold Pieces",
-            "Rations (3 uses)",
-            "Torch (3 uses)",
-            "Brigandine (1 Armor, bulky)",
-            "Sling (d6)",
-            "Hand Axe (d6)",
-            "Repellent (state the creature, 3 uses)",
-        ]
+        self.common_gear = []
 
         self.bound = (
             choice(bounds)
