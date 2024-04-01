@@ -49,6 +49,20 @@ aurifex_tables = [
     # profile
     """You are an artisan of the arcane, a smith of subtle forces. In the crucible of your
 workshop, the laws that govern this world are warped to suit your needs.""",
+    # names
+    [
+    "Hestia",
+    "Basil",
+    "Rune",
+    "Prism",
+    "Ember",
+    "Quintess",
+    "Aludel",
+    "Mordant",
+    "Salaman",
+    "Jazia",
+]
+
 ]
 
 dossier_human_experiment = [

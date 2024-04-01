@@ -20,8 +20,6 @@ from random import choice
 
 class Character:
     def __init__(self, background=None):
-        self.first_name = choice(choice((male_names, female_names, ambiguous_names)))
-        self.last_name = choice(last_names)
         self.STR = roll("3d6")
         self.DEX = roll("3d6")
         self.WIL = roll("3d6")
@@ -36,6 +34,7 @@ class Character:
             #self.dossier_part3,
             self.gear,
             self.profile,
+            names
         ) = BACKGROUND_TABLES.get(self.background)
         self.dossier_name = self.dossier_part1.get("name")
         self.dossier_option = self.dossier_part1.get("options").get(self.HP)
@@ -60,3 +59,4 @@ class Character:
             "virtue": choice(virtue),
             "vice": choice(vice),
         }
+        self.name = choice(names)
