@@ -5,7 +5,7 @@ backgrounds = [
     "Bone Keeper",
     "Cutpurse",
     "Field Warden",
-    "UNDERWORLD",
+    "Fletchwind",
     "PSIONIC",
     "SCIENTIST",
     "SOLDIER",
@@ -399,95 +399,62 @@ Roll a second time on the <b>Bonds</b> table.""",
     ],
 ]
 
-dossier_underworld = [
+fletchwind_tables = [
     {
-        "name": "What Keeps You Safe on the Streets?",
+        "name": "How did you earn your bow?",
         "options": {
-            1: """<b>Ultraviolet Shotgun:</b> (D8 blast, cryo, illegal). Black market weapon that emits sub-zero
-wavelengths. Particularly devastating to unarmored flesh.""",
-            2: """<b>Heart-Stopper Helmet:</b> Face-mask that looks like a devil (+1 armor) and emits a low-
-frequency hum, unsettling others. Can discharge a 30’ sonic blast (D6 sonic) once a day.""",
-            3: """<b>“Brick”:</b> Take a freelancer (merc) with 12 STR, 8 DEX, 6 WIL, 3 HP, Billhook (D6, bulky)
-They’re not the brightest bulb, but they’re pretty large and intimidating. Rename if you
-wish.""",
-            4: """<b>Red Hyena:</b> (6 HP, 14 DEX, D6 bite, critical damage save vs STR or break a bone) A very
-large, red coated hyena. Obeys you via a neural link, but some of its affection might be
-natural.""",
-            5: """<b>Prototype Vibro-spear:</b> (D8, bulky, shock) Considered a truly nasty weapon.""",
-            6: """<b>Synth-weave Duster:</b> (1 armor, lots of pockets) It’s like a jacket only it’s longer, thicker,
-and far more bad-ass.""",
+            1: """<b>War</b>. If you are first to attack, your bow gains the blast property for the
+first round.""",
+            2: """<b>Falconry</b>. You keep a falcon [3 hp, 5 STR, 16 DEX, 4 WIL, claws (d6+d6),
+bite (d6)]. It only eats live game.""",
+            3: """<b>Hunting.</b> When taking the Supply (pg. 80) action your ability to secure
+Rations increases by one step (e.g. 1d4 becomes 1d6).""",
+            4: """<b>Tournaments.</b> Attacks with your bow are enhanced if the target is
+immobile.""",
+            5: """<b>Training.</b> If you are the first to attack, melee attacks against you are
+impaired until you take STR damage.""",
+            6: """<b>Scouting.</b> When taking the Travel (pg. 80) action, your presence decreases
+the chance of getting lost by one step (e.g. 4-in-6 becomes 3-in-6).""",
         },
     },
     {
-        "name": "Type of Scum",
+        "name": "What kind of wood is your bow made from?",
         "options": {
-            1: """<b>Thug:</b> You are good at cheap
-shots. Attacks are enhanced on
-an enemy that has been hit in the
-same round.""",
-            2: """<b>Fence:</b> You always know
-someone from whom to get more
-creds from selling treasure.""",
-            3: """<b>Scoundrel:</b> You worked for
-yourself. +1 HP and take a lead
-on a lucrative job.""",
-            4: """<b>Goon:</b> You did the shakedowns.
-You impose DIS on anyone
-making a WIL save against your
-intimidation efforts.""",
-            5: """<b>Ex-Syndicate Captain:</b> You used
-to be a top dog in a syndicate
-until you were double crossed
-and kicked out. Roll a random
-Ex-Tech you “liberated” on the
-way out.""",
-            6: """<b>Fixer:</b> You were a fixer, setting up
-jobs for the criminal underworld.
-You can negotiate for higher pay
-on jobs involving criminal activity.""",
-        },
-    },
-    {
-        "name": "Criminal Knack",
-        "options": {
-            1: """<b>Know A Guy:</b> You can figure out
-how to contact someone seedy
-in any city after an hour of asking
-around.""",
-            2: """<b>Forging Documents:</b> Can make
-a fake ID for 50 creds, and
-other similar forgeries of varying
-quality depending on costs.""",
-            3: """<b>Cheating:</b> If you’re gambling,
-playing games of chance, or
-making some sort of agreement
-with someone, you’re especially
-good at cheating and not getting
-caught.""",
-            4: """<b>Talking Shop:</b> Reaction roll
-results are always one category
-higher with others of the criminal
-persuasion.""",
-            5: """<b>Politically Crooked:</b> You know
-how governments work and
-just how corrupt politics can be.
-Any factions of the government
-variety deal favorably with you.""",
-            6: """<b>Sticky Fingers:</b> Picking pockets,
-lifting goods, and general larceny
-comes quite easily to you,
-granting you ADV if you take a
-measured, intelligent approach
-with the proper tools.""",
+            1: """<b>Western Yew</b> (d6, <em>bulky</em>). Can be wielded as a blunt weapon (d6). Noisy.""",
+            2: """<b>Sessile Oak</b> (d8, <em>bulky</em>). Slams into targets. On critical damage, something is torn off.""",
+            3: """<b>Stone Pine</b> (d6, <em>bulky</em>). Produces one use of Sticky Sap per day. It is highly explosive.""",
+            4: """<b>White Ash</b> (d6, <em>bulky</em>). Can be used in place of a shield in melee combat (+1 Armor).""",
+            5: """<b>Striped Bamboo</b> (d6). Collapsible, it only requires one slot (but still requires both hands).""",
+            6: """<b>Wych Elm</b> (d6, <em>bulky</em>). Protects the bearer from poisons and toxins, so long as they are holding it.""",
         },
     },
     # starting gear
-    ["Old Shotgun (D6 blast, bulky, cheap)", "Smart meds", "Bolt cutters"],
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Bow (see table)",
+        "Serrated Knife (d6)",
+        "Boiled Leather (1 Armor)",
+        "Heartroot Salve (restores 1d4 STR, 1 use)",
+    ],
     # profile
-    """Just another low life trying to make a few creds. You likely have ties to other
-criminals and criminal organizations, syndicates, and less reputable individuals.
-Whether you worked for them, worked alone, or had some other arrangements
-might depend.""",
+    """You strike from afar, but that does not make you a coward. You are a musician,
+the song of your bowstring nought but a warning, singing the silent promise of a
+quick death.""",
+    # names
+    [
+        "Flint",
+        "Feather",
+        "Crier",
+        "Thunder",
+        "Falcon",
+        "Pluck",
+        "Needle",
+        "Warsong",
+        "Hawk",
+        "Cai",
+    ],
 ]
 
 dossier_psionic = [
@@ -715,6 +682,23 @@ dossier_bounty_hunter = [
 wolves from the door. You made your living as a licensed bounty hunter.""",
 ]
 
+
+template_tables = [
+    {
+        "name": "What Keeps You Safe on the Streets?",
+        "options": {},
+    },
+    {
+        "name": "Type of Scum",
+        "options": {},
+    },
+    # starting gear
+    [],
+    # profile
+    """""",
+    # names
+    [],
+]
 BACKGROUND_TABLES = {
     "Aurifex": aurifex_tables,
     "Barber-Surgeon": barber_surgeon_tables,
@@ -722,7 +706,7 @@ BACKGROUND_TABLES = {
     "Bone Keeper": bonekeeper_tables,
     "Cutpurse": cutpurse_tables,
     "Field Warden": field_warden_tables,
-    "UNDERWORLD": dossier_underworld,
+    "Fletchwind": fletchwind_tables,
     "PSIONIC": dossier_psionic,
     "SCIENTIST": dossier_scientist,
     "SOLDIER": dossier_soldier,
