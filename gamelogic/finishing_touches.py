@@ -39,30 +39,69 @@ hair = [
     "Wispy",
 ]
 
-clothing_style = [
-    "Antiquated",
-    "Obscuring",
-    "Unstylish",
-    "Foreign",
-    "Smart",
-    "Outlandish",
-    "Practical",
-    "Tattered",
-    "Dirty",
-    "Flamboyant",
-]
-
 face = [
-    "Boney",
-    "Haunted",
-    "Stern",
+    "Bony",
+    "Broken",
+    "Elongated",
     "Sharp",
     "Chiseled",
     "Square",
-    "Beautiful",
+    "Perfect",
+    "Rakish",
     "Sunken",
-    "Broken",
-    "Friendly",
+    "Pale",
+]
+
+speech = [
+    "Blunt",
+    "Gravelly",
+    "Booming",
+    "Precise",
+    "Cryptic",
+    "Squeaky",
+    "Droning",
+    "Stuttering",
+    "Formal",
+    "Whispery",
+]
+
+clothing_style = [
+    "Antique",
+    "Frayed",
+    "Bloody",
+    "Frumpy",
+    "Elegant",
+    "Livery",
+    "Filthy",
+    "Rancid",
+    "Foreign",
+    "Soiled",
+]
+
+virtue = [
+    "Ambitious",
+    "Honorable",
+    "Cautious",
+    "Humble",
+    "Courageous",
+    "Merciful",
+    "Disciplined",
+    "Serene",
+    "Gregarious",
+    "Tolerant",
+]
+
+vice = [
+    "Aggressive",
+    "Lazy",
+    "Bitter",
+    "Nervous",
+    "Craven",
+    "Rude",
+    "Deceitful",
+    "Vain",
+    "Greedy",
+    "Vengeful",
 ]
 
 male_names = [

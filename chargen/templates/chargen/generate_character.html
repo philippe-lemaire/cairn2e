@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% load static %}
-{% block title %}Monolith - Character Gen{% endblock title %}
+{% block title %}Cairn 2e - Character Gen{% endblock title %}
 {% block content %}
-<h1>A Monolith Character</h1>
+<h1>A Cairn 2e Character</h1>
 
 <div class="card">
   <div class="card-body">
@@ -35,7 +35,7 @@
                     <td>{{char.dossier_subpart_option|safe}}</td>
                 </tr>
                 <tr>
-                    <th>Bounds</th><td>Rolled bound, todo</td>
+                    <th>Bounds</th><td>{{char.bound|safe}}</td>
                 </tr>
 
             </table>

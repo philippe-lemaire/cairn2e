@@ -6,12 +6,15 @@ from gamelogic.finishing_touches import (
     hair,
     clothing_style,
     face,
+    speech,
+    virtue,
+    vice,
     male_names,
     female_names,
     ambiguous_names,
     last_names,
 )
-from gamelogic.vices import vices
+from gamelogic.bounds import bounds
 from random import choice
 
 
@@ -43,18 +46,17 @@ class Character:
 
 
         self.common_gear = [
-            "Three days of rations (one slot)",
-            "Cheap Data-comm (one slot)",
-            "Glo-torch (one slot)",
-            f"{roll('3d6')} Credits (C)",
         ]
+
+        self.bound = choice(bounds)
+
         self.finishing_touches = {
             "physique": choice(physique),
             "skin": choice(skin),
             "hair": choice(hair),
-            "clothing style": choice(clothing_style),
+            "clothing": choice(clothing_style),
             "face": choice(face),
+            "speech": choice(speech),
+            "virtue": choice(virtue),
+            "vice": choice(vice),
         }
-        # save will or get a vice
-        save = roll("1d20") <= self.WIL
-        self.vice = None if save else choice(vices).get("name")
