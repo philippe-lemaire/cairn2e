@@ -1,5 +1,5 @@
 backgrounds = [
-    "MERCENARY",
+    "Aurifex",
     "HUMAN EXPERIMENT",
     "ENGINEER",
     "SMUGGLER",
@@ -13,82 +13,42 @@ backgrounds = [
     "BOUNTY HUNTER",
 ]
 
-dossier_mercenary = [
+aurifex_tables = [
     {
-        "name": "Signature Weapon",
+        "name": "What experiment went horribly wrong?",
         "options": {
-            1: "<b>Ifriti-9000 “Hell Spitter”</b> (D10 Blast, Thermal, Bulky) and 2 tanks of fuel (spec-ammo). A deluxe model flamethrower that sprays super-thermal plasma that can burn through metal.",
-            2: "<b>Folding Vibro-Shank</b> (D6, Deadly, Shock, concealable) A five-inch blade that does absolutely devastating damage. Folds up for concealing. Very-illegal.",
-            3: "<b>Supercharged Carbine Repeater</b> (D8 Thermal and d6 Cryo, bulky) Custom modded to switch between thermal or sub-zero energy rounds. Switching takes 1 turn.",
-            4: "<b>Jade-Iron Machete (D8, Deadly)</b> 3 feet of marbled green metal with a wicked cutting edge. Expert craftsmanship and quite valuable.",
-            5: "<b>“Trusty”</b> (D6 Blaster) & <b>“Rusty”</b> (D6 Blaster, Cheap) These two guns have been with you through thick & thin.",
-            6: "<b>“Rusty”</b> (D6 Blaster, Cheap) You used to have two but lost the good one…",
+            1: "There was an explosion, and you lost your sense of smell. Well, almost: you can sniff out gold as a pig does truffles. Take a <b>Tin of Snuff</b> (6 uses) to dampen the impact. Use it every day or become deprived.",
+            2: "You dematerialized a beloved pet. Now it follows you around, invisible but always present. Although it cannot interact with the physical realm, you are able to share its senses (add a Fatigue each time). It follows basic commands.",
+            3: "You were exposed to a long-acting truth serum whose effects have yet to wear off. The disorder has its advantages: you cannot repeat lies you’ve heard, either.",
+            4: "You were adept at creating fake gold, which is almost as good. Eventually, your ruse was discovered and you had to make a hasty retreat. Take a heavy Metal Ingot and Gold Powder (3 uses).",
+            5: "Your recipe worked, but a rival stole the blueprint before your claims could be proven. Take a prototype Blunderbuss (d12, blast, bulky) and a taste for revenge.",
+            6: "Ridiculed for discovering how to turn gold into lead, you were a laughing stock. Take a bottle of Universal Solvent (2 uses) that dissolves anything it touches into its constituent parts.",
         },
     },
     {
-        "name": "Old Crew Specialty",
+        "name": "What alchemical marvel is the product of your latest ingenuity?",
         "options": {
-            1: "<b>Para-Military:</b> Private sector military for hire. You were, and probably still are, an absolute professional. Take holo-binocs and a claymore.",
-            2: "<b>Seedy Jobs:</b> Hired muscle contracted through criminal syndicates, you are familiar with the less savory parts of the galaxy. Take a grimy outfit, a pack of smokes, & 6d12 worth of underworld trade goods.",
-            3: "<b>Ghost Unit:</b> Your crew specialized in delicate matters that needed doing discreetly and without a trace. Take plasti-steel armor (Armor 1, bulky) and a gas mask.",
-            4: """<b>Hit Squad:</b> Assassinations were
-            your bread & butter. Take a
-            thermal detonator, a dark outfit,
-            and an infrared visor helm (Armor
-            1, heat vision)""",
-            5: """<b>Corp-Sec:</b> Private megacorporate
-                security for a major faction.
-                Generate a faction and NPC and
-                determine what type of business.
-                Take the talent “Human Shield”.""",
-            6: """<b>Deep Cover:</b> Specialists in
-            infiltration as double agents for
-            espionage and intel gathering.
-            Take an auto-lock slicer, drone
-            cam, and fake ID.""",
+            1: "<b>Pyrophoric Gel:</b> A sticky green fluid that catches fire when exposed to air, then burns for 8 hours. Cannot be extinguished (1 use).",
+            2: "<b>Blast Sphere</b>: A head-sized iron ball filled with explosive powder that explodes on impact (d12, blast, bulky, 1 use).",
+            3: "<b>Aqua Vita</b>: Purifies any liquid, converting it to pure water. Drinking it cures 1d6 STR (1 use).",
+            4 : "<b>Mimic Stone</b>: Records a short phrase that can later be played back.",
+            5: "<b>Spark Dust</b>: Ignites easily and quickly. Useful for starting a fire or as an incendiary device (3 uses).",
+            6: "<b>Homunculus</b>: A miniature clay replica of yourself that follows your every command to the letter. It hates being enthralled to you and complains bitterly whenever possible. Any damage done to the homunculus is also done to you."
+
         },
     },
-    {
-        "name": "What happened?",
-        "options": {
-            1: """<b>Last Man Standing:</b> Something
-bad happened and everyone
-turned on each other. It was a
-bloodbath and you were the last
-man standing...at least you think.""",
-            2: """<b>Betrayal:</b> Were you the leader, or
-were you a betrayer? Or was the
-whole crew betrayed by someone
-- inside or out? Either way, the
-crew broke up and you have to
-make your own way.""",
-            3: """<b>Things Just Change...:</b> Or maybe
-you changed. Either way, you
-decided you didn’t want to do
-what they did anymore, and
-broke off on your own.""",
-            4: """<b>Splintered:</b> The group splintered,
-maybe from a disagreement in
-leadership, or infighting, and
-splinter groups broke off.""",
-            5: """<b>Kicked Out:</b> Whether it was from
-breaking the rules, or not seeing
-eye-to-eye with the brass, you
-were exiled from your crew on
-bad terms.""",
-            6: """<b>Left Behind:</b> Things went
-sideways on your last mission
-and you got left behind mission,
-considered MIA or dead. Maybe
-it’s time for a fresh start.""",
-        },
-    },
-    ["Old Crew Emblem", "Combat Knife (D6) or 2 Flash Grenades", "Cigar"],
+
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Lantern",
+        "Oil Can (6 uses)",
+        "Needle-Knife (d6)",
+        "Protective Gloves (petty)",
+],
     # profile
-    """Mercenary crews are guns for hire. They have experience in combat, insider
-knowledge of the violence business, and are a little rougher around the edges than
-others. You and your old crew fought for the highest bidder, not for any sort of
-ideology. Unless that ideology was lots of creds.""",
+    """You are an artisan of the arcane, a smith of subtle forces. In the crucible of your
+workshop, the laws that govern this world are warped to suit your needs.""",
 ]
 
 dossier_human_experiment = [
@@ -895,8 +855,8 @@ dossier_bounty_hunter = [
 wolves from the door. You made your living as a licensed bounty hunter.""",
 ]
 
-DOSSIERS = {
-    "MERCENARY": dossier_mercenary,
+BACKGROUND_TABLES = {
+    "Aurifex": aurifex_tables,
     "HUMAN EXPERIMENT": dossier_human_experiment,
     "ENGINEER": dossier_engineer,
     "SMUGGLER": dossier_smuggler,

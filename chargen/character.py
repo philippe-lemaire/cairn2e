@@ -1,8 +1,8 @@
 from gamelogic.roll import roll
-from gamelogic.backgrounds import backgrounds, DOSSIERS
+from gamelogic.backgrounds import backgrounds, BACKGROUND_TABLES
 from gamelogic.finishing_touches import (
     physique,
-    mannerisms,
+    skin,
     hair,
     clothing_style,
     face,
@@ -30,18 +30,18 @@ class Character:
         (
             self.dossier_part1,
             self.dossier_part2,
-            self.dossier_part3,
+            #self.dossier_part3,
             self.gear,
             self.profile,
-        ) = DOSSIERS.get(self.background)
+        ) = BACKGROUND_TABLES.get(self.background)
         self.dossier_name = self.dossier_part1.get("name")
         self.dossier_option = self.dossier_part1.get("options").get(self.HP)
         self.dossier_subpart_name = self.dossier_part2.get("name")
         self.dossier_subpart_option = choice(
             list(self.dossier_part2.get("options").values())
         )
-        self.dossier_question = self.dossier_part3.get("name")
-        self.dossier_answer = choice(list(self.dossier_part3.get("options").values()))
+
+
         self.common_gear = [
             "Three days of rations (one slot)",
             "Cheap Data-comm (one slot)",
@@ -50,7 +50,7 @@ class Character:
         ]
         self.finishing_touches = {
             "physique": choice(physique),
-            "mannerism": choice(mannerisms),
+            "skin": choice(skin),
             "hair": choice(hair),
             "clothing style": choice(clothing_style),
             "face": choice(face),

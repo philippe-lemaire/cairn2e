@@ -35,19 +35,16 @@
                     <td>{{char.dossier_subpart_option|safe}}</td>
                 </tr>
                 <tr>
-                    <th>{{char.dossier_question}}</th><td>{{char.dossier_answer|safe}}</td>
+                    <th>Bounds</th><td>Rolled bound, todo</td>
                 </tr>
-                <tr>
-                    <th>Vice</th>
-                    <td>{{char.vice}}</td>
-                </tr>
+
             </table>
         </div>
         <div class="col">
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col" colspan="2">Finishing touches</th>
+                        <th scope="col" colspan="2">Traits</th>
                     </tr>
                 </thead>
                 {% for key, value in char.finishing_touches.items %}

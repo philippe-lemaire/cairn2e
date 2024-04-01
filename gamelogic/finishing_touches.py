@@ -11,30 +11,32 @@ physique = [
     "Scarred",
 ]
 
-mannerisms = [
-    "Blunt",
-    "Precise",
-    "Formal",
-    "Quiet",
-    "Gravelly",
-    "Chatty",
-    "Cryptic",
-    "Loud",
-    "Whispery",
-    "On-Edge",
+skin =[
+    "Birthmarked",
+    "Marked",
+    "Oily",
+    "Rosy",
+    "Scarred",
+    "Soft",
+    "Tanned",
+    "Tattooed",
+    "Webbed",
+    "Weathered",
 ]
+
+
 
 hair = [
     "Bald",
     "Long",
-    "Buzzed",
-    "Slicked",
     "Braided",
     "Luxurious",
     "Curly",
-    "Mohawk",
-    "Dirty",
-    "Dyed",
+    "Oily",
+    "Filthy",
+    "Wavy",
+    "Frizzy",
+    "Wispy",
 ]
 
 clothing_style = [
