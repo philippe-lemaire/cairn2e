@@ -15,7 +15,7 @@ from gamelogic.finishing_touches import (
     last_names,
 )
 from gamelogic.bounds import bounds
-from random import choice
+from random import choice, sample
 
 
 class Character:
@@ -31,10 +31,10 @@ class Character:
         (
             self.dossier_part1,
             self.dossier_part2,
-            #self.dossier_part3,
+            # self.dossier_part3,
             self.gear,
             self.profile,
-            names
+            names,
         ) = BACKGROUND_TABLES.get(self.background)
         self.dossier_name = self.dossier_part1.get("name")
         self.dossier_option = self.dossier_part1.get("options").get(self.HP)
@@ -43,11 +43,21 @@ class Character:
             list(self.dossier_part2.get("options").values())
         )
 
-
         self.common_gear = [
+            "3d6 Gold Pieces",
+            "Rations (3 uses)",
+            "Torch (3 uses)",
+            "Brigandine (1 Armor, bulky)",
+            "Sling (d6)",
+            "Hand Axe (d6)",
+            "Repellent (state the creature, 3 uses)",
         ]
 
-        self.bound = choice(bounds)
+        self.bound = (
+            choice(bounds)
+            if self.background != "Field Warden"
+            else "<br><br>".join(sample(bounds, 2))
+        )
 
         self.finishing_touches = {
             "physique": choice(physique),

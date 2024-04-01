@@ -4,7 +4,7 @@ backgrounds = [
     "Beast Handler",
     "Bone Keeper",
     "Cutpurse",
-    "MACHINE",
+    "Field Warden",
     "UNDERWORLD",
     "PSIONIC",
     "SCIENTIST",
@@ -336,97 +336,67 @@ richest merchant and the lowliest guard.""",
     ],
 ]
 
-dossier_machine = [
+field_warden_tables = [
     {
-        "name": "Custom Hardware",
+        "name": "What got the better of you?",
         "options": {
-            1: """<b>Heat-Wave Optics:</b> (D8, or D6 blast, thermal) Eye lasers. Take 1 fatigue.""",
-            2: """<b>Reinforced Casing:</b> If you take max damage from an attack, half it.""",
-            3: """<b>Auto-Targeting Subroutine:</b> Re-roll damage results of 1.""",
-            4: """<b>Overclocked Processors:</b> Re-roll 1 DEX save a day.""",
-            5: """<b>Hidden Storage:</b> Two extra inventory slots inside your chassis.""",
-            6: """<b>High-Speed Data Jack:</b> Improved hacking into networked systems.""",
+            1: """A voracious swarm of pests that swallowed crops and animals alike. With
+nothing to defend, you left. Take <b>Gale Seed Extract</b> (3 uses). Ingesting one
+lets you sprint with a speed four times your regular rate. Afterward you
+add two <b>Fatigue</b>.""",
+            2: """A crop spirit, angered by a poor tithing. The fires consumed nearly
+everything, and afterwards you were able to gather a pouch of <b>Fireseeds</b>
+(d8, <em>blast</em>, 4 uses).""",
+            3: """An antlered, toothy demon that nearly ended you. Take a <b>blood-stained
+bone knife</b> (d6). On critical damage, its next attack becomes <em>enhanced</em>
+from contact with blood.""",
+            4: """<em>The Withering</em>, a type of stem rot from <b>The Roots</b>. Take a <b>Diseased Crop</b>
+(6 uses) that decays any plant it touches.""",
+            5: """Wolves, or so you thought. You are now a <b>Werewolf</b> [8 HP, 15 STR, 14 DEX,
+claws (d6+d6) or bite (d8)]. Your WIL remains the same. You can turn at
+will (once per day) but must make a WIL save to revert. Anyone left alive
+from your attacks must make a WIL save to avoid infection.""",
+            6: """Crop thieves. Not all of them survived, but you were outnumbered. Take a
++d4 HP and a <b>Hilted Broadsword</b> (d8, <em>bulky</em>).""",
         },
     },
     {
-        "name": "Model Type",
+        "name": "What tool saved your life?",
         "options": {
-            1: """<b>Droid:</b> Standard bi-pedal,
-humanoid robot. Explain your
-original purpose and what you
-look like. You have natural +1
-armor.""",
-            2: """<b>Android:</b> You look mostly human.
-You are not. Synthetic androids
-are often discriminated against.
-Your build quality is fluid and
-graceful, take +1 DEX.""",
-            3: """<b>Rogue A.I.</b> Your chassis is
-a bit unconventional, as you
-are primarily an A.I. core that
-escaped via hacking into and
-commandeering another vessel.
-Explain how your frame is built.
-You can temporarily swap bodies
-with other machines, taking them
-over, for 1d4 hours (1 fatigue).""",
-            4: """<b>Lazarus Machine:</b> You are the
-last remains of an intelligent
-organic being, and mostly
-brain tissue at this point. Your
-consciousness was uploaded into
-this robotic body. Your chassis
-was designed to be heavily
-modded. 50% discount on all
-cyberware.""",
-            5: """<b>Bio-Synth:</b> You’re composed
-of a mix of mechanical and
-biological parts. You can use and
-get a 50% discount on genetic
-modifications.""",
-            6: """<b>Incomplete Prototype:</b> You
-function well enough, but were
-never fully completed for the
-original purpose of your build.""",
-        },
-    },
-    {
-        "name": "Manufacturer",
-        "options": {
-            1: """<b>Jury-Rigged:</b> You are composed
-of several lightly used parts
-from various other machines
-by an unknown builder. Some
-components weren’t installed
-correctly.""",
-            2: """<b>Military-Industrial:</b> You
-were built for tactical military
-purposes.""",
-            3: """<b>Savant Engineer:</b> You’re the
-creation of a genius inventor.""",
-            4: """<b>Alien Society:</b> An alien species
-built you, and it shows in your
-build. Explain your unusual
-appearance.""",
-            5: """<b>Ancient Maker:</b> This
-manufacturer and all of their
-creations are long gone. You’re
-rare, incredibly antiquated, yet
-still in immaculate condition.""",
-            6: """<b>Megacorp:</b> Your line has been
-mass produced for a giant
-corporate entity.""",
+            1: """<b>Bloodvine Whip</b> d8 damage. On Critical Damage it drains the target’s
+blood, granting the weapon’s next attack the blast quality.""",
+            2: """<b>Clatter Keeper</b> A hand-cranked device that emits a loud noise, frightening
+away most creatures.""",
+            3: """<b>Sun Stick</b> Provides ample warmth and light for up to one hour (1
+use). <b>Recharge:</b> Leave in heavy sunlight for a full day.""",
+            4: """<b>Root Tether</b> When thrown, binds up to a wolf-sized creature to the soil
+for a short time.""",
+            5: """<b>Greenwhistle</b> A small flute that calms plants, making passage through
+areas heavy with plant life a bit easier.""",
+            6: """<b>Everbloom Band</b> A circlet adorned with flowers that never wilt. On taking
+<b>Critical Damage</b> the flowers dissolve into dust, but you
+act as if your save succeeded (STR loss still occurs).""",
         },
     },
     # starting gear
-    ["Short Rifle (D6, bulky)", "Antivirus.EXE (1 use, removes 1 fatigue)"],
+    [],
     # profile
-    """All machines have a purpose. What was yours, and what will it become? Machines
-can only take <b>cyberware augmentations</b>. They must make sense for your model
-type. You <b>do not need to eat or breathe</b> and cannot take damage from sources that
-rely on those functions (breathing, poison, etc). You are <b>immune to mind-altering
-effects</b>. You must sleep (re-boot/defrag/update) roughly as much as everyone else.
-<b>Shock does double damage.</b>""",
+    """Protectors of the harvest, defense against pests, thieves, and beasts. A position of
+great honor, while it lasts: many guardians do not live out their natural lives.
+Roll a second time on the <b>Bonds</b> table.""",
+    # names
+    [
+        "Seed",
+        "Thresh",
+        "Dibber",
+        "Sow",
+        "Stalk",
+        "Harrow",
+        "Cobb",
+        "Flax",
+        "Briar",
+        "Rye",
+    ],
 ]
 
 dossier_underworld = [
@@ -751,7 +721,7 @@ BACKGROUND_TABLES = {
     "Beast Handler": beast_handler_tables,
     "Bone Keeper": bonekeeper_tables,
     "Cutpurse": cutpurse_tables,
-    "MACHINE": dossier_machine,
+    "Field Warden": field_warden_tables,
     "UNDERWORLD": dossier_underworld,
     "PSIONIC": dossier_psionic,
     "SCIENTIST": dossier_scientist,
