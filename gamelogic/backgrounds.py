@@ -2,7 +2,7 @@ backgrounds = [
     "Aurifex",
     "Barber-Surgeon",
     "Beast Handler",
-    "SMUGGLER",
+    "Bone Keeper",
     "PILOT",
     "MACHINE",
     "UNDERWORLD",
@@ -136,96 +136,52 @@ words.""",
 
 beast_handler_tables = [
     {
-        "name": "Pet Project",
+        "name": "What creature is your specialty?",
         "options": {
-            1: """<b>Dimension De-stabilizer:</b> Tech belt that allows the wearer to slip in and out of reality.
-You cannot interact with anything in this reality but are still visible.""",
-            2: """<b>Division Multiplier:</b> Harness that when activated splits you into two smaller versions of
-yourself. HP & Ability Scores are halved. Inventory exists in a quantum state; items used
-by one version are inaccessible to the other. Lasts 1 minute. Causes 1 fatigue.""",
-            3: """<b>Molecular Shield Generator:</b> (+1 armor, 3 bonus HP a day) Swarm of fly-sized nanobots
-orbit you, occasionally running scans on your biological makeup, providing you with
-customized shielding and protection. Bonus HP takes a day to recharge.""",
-            4: """<b>Anti-Grav Boots:</b> Activate to reduce your fall speed at the last second and land safely.
-Recharge via 100 credit worth of common battery parts in 1d6 hours.""",
-            5: """<b>Catherine:</b> An A.I. chip you can implant into any basic device. Currently installed in your
-personal comm unit. Catherine is very polite. Will warn you of any imminent danger you
-might not notice. May run advanced diagnostics.""",
-            6: """<b>Spider-Wasp Drone:</b> A spider-sized drone that can quietly fly, crawl on most surfaces,
-and transmit video footage up to 200ft.""",
+            1: "Arachnids</b>: Take a Quick-Flame Rod and an Oil Can (6 uses). It can destroy a large spider nest in seconds.",
+            2: "<b>Felines</b>: Take a sack of Whiskerwort. Its odor can calm and control even the largest of cats.",
+            3: "<b>Canines</b>: Take a wreath of Wolfsbane and a Large Net. Also effective against werewolves!",
+            4: "<b>Birds</b>: Take a Warble-Whistle (3 charges). It can imitate any bird call, and can even be used to send simple messages.  Recharge: Feed a baby bird as its mother would, then blow.",
+            5: "<b>Rodents</b>: Take a Windpipe that emits a high-pitched sound that only rodents can hear. So long as you play, they will follow. Even to their deaths.",
+            6: "<b>Serpents</b>: Take a Warming Stone that generates an irresistible heat, and a vial of Antitoxin (2 uses).",
         },
     },
     {
-        "name": "Technical Expertise",
+        "name": "What do creatures of the wild understand that your kind do not?",
         "options": {
-            1: """<b>Cyberware:</b> Take Smart-Eye
-implants (Eye Socket.) 10x zoom,
-recording & playback.""",
-            2: """<b>Starships:</b> You can fix any part of
-a ship, but it takes 2D12 hours.""",
-            3: """<b>Weapons:</b> Take a Mass Untangler
-(D8, illegal, critical damage
-instantly disintegrates organics if
-they fail a STR save)""",
-            4: """<b>Security Systems:</b> You can get
-through manually locked doors
-and shut down surveillance with
-minimal effort and tools.""",
-            5: """<b>Robotics:</b> Take a chest harness
-(1 slot) with a robotic arm on
-it that can carry a weapon and
-perform similar actions to your
-own arms. Only works with your
-DNA signature.""",
-            6: """<b>Software:</b> You have increased
-effect and reduced failure when
-performing tasks related to
-computers, hacking, and using
-software or user-interfaces.""",
-        },
-    },
-    {
-        "name": "Savant Specialty",
-        "options": {
-            1: """<b>Gearhead:</b> You can spend 1 turn
-(10 min) tinkering with most
-fist-sized objects you’re familiar
-with to get them at least partially
-working.""",
-            2: """<b>0110101001:</b> You’re oddly
-persuasive to A.I. and computing
-systems. +1 to reaction roll
-results with machines and
-synthetics.""",
-            3: """<b>MacGyver:</b> You can fix almost
-anything with duct tape, holding
-anything broken together as if
-undamaged for 1D6 hours. Also,
-generally handier than almost
-anyone else.""",
-            4: """<b>Fried Wires:</b> You’ve tinkered with
-enough electronic components
-that shock damage and anything
-electric only damages your
-HP, completely ineffective at
-damaging your Ability Scores.""",
-            5: """<b>Jack of All Trades:</b> You’re
-pretty good at everything. Once
-a day you can take one fatigue
-to accomplish something that
-would otherwise require a Save.""",
-            6: """<b>Black Lung:</b> Inhaling enough
-machine smog has given you a
-degree of immunity to inhaled
-toxins and other harmful
-breathable substances.""",
+            1: """There is far more to the world than meets the eye. With quiet
+concentration, you can borrow the senses of a nearby creature of your
+specialty.""",
+            2: """The behavior of beasts is a language in itself. When observing beasts of
+your specialty, you gain insight into weather patterns and impending
+disasters.""",
+            3: """The pulse of the hunt is a powerful impulse. You have a sense for when
+predators, even those not of your specialty, are near.""",
+            4: """You know some lands intimately. Your chance of becoming lost in a
+terrain dominated by the beasts of your specialty is reduced by one step
+(e.g. 4-in-6 becomes 3-in-6).""",
+            5: """Nature’s symphony can be heard if you attune to its rhythm. When
+surrounded by creatures of your specialty they can alert you to
+approaching danger before it arrives.""",
+            6: """Survival is about adaptability. Once per day, you may take on a simple
+feature from a creature of your speciality (webbed fingers, night vision,
+etc.). Add a Fatigue each time.""",
         },
     },
     # starting gear
-    ["Crowbar (D6)", "Duct Tape", "Grease-stained work clothes"],
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Leather Whip (d6)",
+        "Soporific Darts (STR save or fall asleep, 6 uses)",
+        "Lure",
+        "Rope (25ft)",
+    ],
     # profile
-    """You’ve built a career around being handy. You’re skilled at repairing and maintaining
-mechanical structures and devices.""",
+    """You alone can walk among the creatures of the wild, fearless and in control. You
+share a connection with animals that others can only dream of...so long as you
+don’t become their snack.""",
     # names
     [
         "Amara",
@@ -241,9 +197,9 @@ mechanical structures and devices.""",
     ],
 ]
 
-dossier_smuggler = [
+bonekeeper_tables = [
     {
-        "name": "Lucky Charm",
+        "name": "What did you take from the dead?",
         "options": {
             1: """<b>Paired Sudo-Collars:</b> Highly unethical metal collars with a subject-object relationship. If
 you can get another living being to wear one, they pretty much do what you want. Make a
@@ -260,88 +216,55 @@ immobilizing. Pretty colors… (6 sticks left)""",
         },
     },
     {
-        "name": "Recent Entanglements",
+        "name": "What tool was invaluable in your work?",
         "options": {
-            1: """<b>Botched Job:</b> You had to dump
-your cargo in space to escape
-pursuit by authorities. Your client
-is furious. You are trying to lay
-low.""",
-            2: """<b>Early Retirement Gift:</b> You
-lifted the goods from a job for
-yourself and said goodbye to the
-smuggler life. Unfortunately you
-are now wanted (alive) for 2000
-creds by a major gang.""",
-            3: """<b>Busted:</b> Mix-up with local system
-authorities. Well, not so much as
-a mix-up as...you’re blacklisted
-from there. (Blacklisted in next
-system you travel to)""",
-            4: """<b>Flawless Career:</b> You were one
-of the best and you’ve managed
-to retire without incident. Your
-reputation grants you 10%
-discount from any underworld
-dealers.""",
-            5: """<b>Jail Time:</b> After getting caught,
-you served some jail time. You’re
-just now getting out and have
-decided to try a change of career.""",
-            6: """<b>Criminal Elements:</b> Your
-smuggling services have recently
-disrupted a local criminal
-element’s business.""",
-        },
-    },
-    {
-        "name": "Trick Up Your Sleeve",
-        "options": {
-            1: """<b>Nine Lives:</b> Once daily, if an
-attack does more damage than
-your remaining HP, instead only
-reduce your HP to 1 and avoid a
-Save vs Critical Damage. (If this
-happens a 10th time, Save vs
-Corruption and add +10 to the
-Hollowing roll if you fail.)""",
-            2: """<b>Shoot First:</b> Don’t roll initiative
-in the first round of any combat,
-just go first.""",
-            3: """<b>Local Parlance:</b> You instantly
-pick up the common way of
-speaking and know how to sound
-like you belong. This carries
-massive street cred, especially
-with criminals.""",
-            4: """<b>Under the Radar:</b> Any smuggler
-worth their salt knows how to
-keep their head down when
-working - you have an especially
-effective touch at dodging local
-authorities.""",
-            5: """<b>Lovely Eyes:</b> Once a day you may
-persuade someone who would
-feasibly find you attractive to do
-you a favor or believe a lie.""",
-            6: """<b>Down But Not Out:</b> When you
-go down after failing a save vs
-critical damage, you can still fire
-a one handed gun. This may draw
-unwanted attention.""",
+            1: """<b>A Crow-Shaped Amulet</b>. You can ask a question of the dead, but must add a <b>Fatigue</b> each time.""",
+            2: """A <b>mortal wound</b> from a freed revenant. You were healed, but the
+disfigurement has made you a pariah. You require neither air nor
+sustenance, but are still subject to pain and death. Trapped between, the
+dead see you as one of their own.""",
+            3: """A <b>Blood Pail</b> <em>(bulky)</em> from a local death-cult. Empty its contents to
+summon a creature built from items buried below (bones, rocks, pottery,
+etc). It obeys your command, but if destroyed you permanently lose 1d4
+STR. It has 6 HP, 1 Armor, 13 STR, 11 DEX, 4 WIL, shard fists (d8). <b>Recharge</b>:
+Fill the bucket with the blood of a dying warrior.""",
+            4: """A <b>Burial Wagon</b> (+6 slots) from your last job. It came with a stubborn old <b>Donkey</b> (+4 slots, +2 slots if pulling wagon, <em>slow</em>).""",
+            5: """
+The Detect Magic <b>Spellbook</b>, stolen from an ancient library. Your family
+worked in service to an obscure underworld deity, but you lost your faith.
+Though exiled, you continue to serve, even as an apostate.
+<em><b>Detect Magic</b></em>: You can see or hear nearby magical auras.""",
+            6: """
+A <b>Plague Doctor’s Mask</b>, after its owner succumbed to the disease that
+wiped out everyone you once knew. They should have kept it on.""",
         },
     },
     # starting gear
     [
-        "Blaster (D6)",
-        "Stylish Outfit",
-        "Fake Clearance Codes (1)",
-        """<b>GM Optional</b>, start with a small starship (stolen or indebted) with smuggling
-holds. It’s currently impounded or stolen.""",
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Lantern",
+        "Oil Can (6 uses)",
+        "Stake (d6)",
+        "Chains (10ft)",
     ],
     # Profile
-    """Running contraband goods for underworld clients is a dangerous game, but you’ve
-gotten good at staying under the radar.""",
+    """You are a shepherd to the departed. You listen to the final whispers of the dead as
+they descend into the cold, unyielding earth. You know that to fully celebrate the
+gift of life, we must honor its finale as well.""",
+    # names
+    [
+        "Rook",
+        "Ebon",
+        "Moro",
+        "Yew",
+        "Pall",
+        "Leth",
+        "Nix",
+        "Barnaby",
+        "Vesper",
+        "Leder",
+    ],
 ]
 
 dossier_pilot = [
@@ -853,7 +776,7 @@ BACKGROUND_TABLES = {
     "Aurifex": aurifex_tables,
     "Barber-Surgeon": barber_surgeon_tables,
     "Beast Handler": beast_handler_tables,
-    "SMUGGLER": dossier_smuggler,
+    "Bone Keeper": bonekeeper_tables,
     "PILOT": dossier_pilot,
     "MACHINE": dossier_machine,
     "UNDERWORLD": dossier_underworld,
