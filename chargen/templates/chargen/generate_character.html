@@ -11,7 +11,7 @@
     <h6 class="card-subtitle mb-2 text-muted">{{char.background}}</h6>
     <p>{{char.profile|safe}}</p>
     <div class="row">
-        <div class="col">
+        <div class="col-8">
             <table class="table">
             <tr>
                 <th>STR</th>
@@ -40,7 +40,7 @@
 
             </table>
         </div>
-        <div class="col">
+        <div class="col-4">
             <table class="table">
                 <thead>
                     <tr>
@@ -53,18 +53,19 @@
                         <td>{{value}}</td>
                     </tr>
                 {% endfor %}
-                    <tr>
-                        <th>Starting gear</th>
-                        <td>
-                            <ul>
-                            {% for item in char.gear %}<li>{{item|safe}}</li>{% endfor %}
-                            {% for item in char.common_gear %}<li>{{item|safe}}</li>{% endfor %}
-                            </ul>
-                        </td>
-                    </tr>
-            </table>
+                </table>
+
         </div><!--col-->
+
     </div><!-- row-->
+
+  <h3>Starting gear</h3>
+
+  <ul class="list-inline">
+  {% for item in char.gear %}<li class="list-inline-item">{{item|safe}}</li>{% endfor %}
+
+  </ul>
+
   </div>
 </div>
 
