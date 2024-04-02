@@ -28,14 +28,21 @@
             </table>
             <table class="table">
                 <tr>
-                    <th>{{char.dossier_name}}</th><td>{{char.dossier_option|safe}}</td>
+                  <td>
+                    <p><b>{{char.dossier_name}}</b><br>
+                    {{char.dossier_option|safe}}</p>
+                  </td>
                 </tr>
                 <tr>
-                    <th>{{char.dossier_subpart_name}}</th>
-                    <td>{{char.dossier_subpart_option|safe}}</td>
+                  <td>
+                    <p><b>{{char.dossier_subpart_name}}</b><br>
+                      {{char.dossier_subpart_option|safe}}</p>
+                 </td>
                 </tr>
                 <tr>
-                    <th>Bounds</th><td>{{char.bound|safe}}</td>
+                    <td><p><b>Bounds</b><br>
+                      {{char.bound|safe}}</p>
+                  </td>
                 </tr>
 
             </table>
@@ -59,7 +66,7 @@
 
     </div><!-- row-->
 
-  <h3>Starting gear</h3>
+  <h4>Starting gear</h4>
 
   <ul class="list-inline">
   {% for item in char.gear %}<li class="list-inline-item">{{item|safe}}</li>{% endfor %}
