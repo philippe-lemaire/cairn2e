@@ -379,7 +379,15 @@ act as if your save succeeded (STR loss still occurs).""",
         },
     },
     # starting gear
-    [],
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Brigandine (1 Armor, <em>bulky</em>)",
+        "Sling (d6)",
+        "Hand Axe (d6)",
+        "Repellent (state the creature, 3 uses)",
+    ],
     # profile
     """Protectors of the harvest, defense against pests, thieves, and beasts. A position of
 great honor, while it lasts: many guardians do not live out their natural lives.
