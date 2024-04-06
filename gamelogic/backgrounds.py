@@ -6,7 +6,7 @@ backgrounds = [
     "Cutpurse",
     "Field Warden",
     "Fletchwind",
-    "PSIONIC",
+    "Foundling",
     "SCIENTIST",
     "SOLDIER",
     "STAR-TOUCHED",
@@ -465,53 +465,76 @@ quick death.""",
     ],
 ]
 
-dossier_psionic = [
+foundling_tables = [
     {
-        "name": "Psionic Awakening",
+        "name": "Who took you in?",
         "options": {
-            1: "<b>You are Gifted.</b> Shatter: Your voice echoes with the sound of an earthquake, causing d8 damage (blast 20’) to creatures, and shatters delicate objects. Take 1 fatigue.",
-            2: "<b>You are Psychic.</b> Read Thoughts: You can hear the surface thoughts of nearby creatures and can communicate telepathically, either clearly in languages you know, or a general sense of emotions in languages you are unfamiliar with.",
-            3: "<b>You are Telekinetic.</b> Telekinesis: You may mentally move an item under 60lbs. Take 1 fatigue.",
-            4: "<b>You are a Mesmer.</b> Spectacle: A clearly false but impressive illusion of your choice appears, under your control. It may be up to the size of a palace and has full motion and sound.",
-            5: "<b>You are a Precog.</b> Vision: Once a day, roll a 1d20 and keep that roll. You may substitute that roll for any Save you, an ally, or an enemy makes after seeing the results. Gain 1 fatigue when you roll your vision and keep it in inventory until the dice is used.",
-            6: "<b>You are an Esper.</b> Calm: A creature you can see is soothed and treats you as a friend for 1d6 hours. Take 1 fatigue.",
+            1: """An old hunter. You were both quite happy, until it all ended. Take a
+<b>Weathered Longbow</b> (d8, <em>bulky</em>) and a <b>Leather Jerkin</b> (1 Armor).""",
+            2: """A wizened apothecary, who taught you the healing arts but maintained a
+clinical detachment. Take a <b>Healing Ungent</b> (restores d4 STR).""",
+            3: """A druid, who taught you the language of trees. When it came time to leave
+you took with you only a <b>Gnarled Staff</b> (d8) and the promise that one day
+you would return.""",
+            4: """A gruff blacksmith from a sleepy river town. You were always kept at arm’s
+length. Now the forge is cold, and you’ve moved on. Take a <b>Smith’s Apron</b>
+(petty) and a set of oft-mended <b>Chain Mail</b> (2 Armor, <em>bulky</em>).""",
+            5: """A troupe of traveling entertainers. For a time, they were like family to you.
+One day you woke up and they were gone with no explanation. Take a
+<b>Storybook</b>, a <b>Dagger</b> (d6), and some burning questions.""",
+            6: """
+The monks of a secluded forest monastery. When their rules became too
+strict, you snuck away. Take a <b>Monk’s Habit</b> (warm, petty) and a <b>Spellbook</b>
+of <em>Control Plants</em>.<br>
+<em><b>Control Plants:</b> Nearby plants and trees obey you and gain the ability to
+move at a slow pace.</em>""",
         },
     },
     {
-        "name": "Old Cover Identity",
+        "name": "What keeps away bad tidings?",
         "options": {
-            1: "<b>Ship Crewmate:</b> You got by as a shiphand. You have technical know-how of starships. Take a blow torch and super glue.",
-            2: "<b>Corporate Processor:</b> Hiding in plain sight, day to day, was quite boring. You know the ins-and- outs of bureaucracy, and usually roll with ADV when making any rolls involving corporations or business.",
-            3: "<b>Private Investigator:</b> Your powers are quite useful when it comes to P.I. work. Take infrared smart-binocs and an area scanner. Oh, and a cool hat.",
-            4: "<b>Charlatan:</b> A fool and his money, as they say. Running scams are just easier when you have psionic. Take 10d6 credits and a low level bounty for petty crimes.",
-            5: "<b>Pilgrim:</b> You lived a simple life following the path inside. You learned to open your mind and attune to your gifts. Roll another random psionic power.",
-            6: "<b>Military Peon:</b> The rigorous life of a military grunt was a simple way to get by. Your service is up now. Take a Shard-sprayer (D8 blast, bulky) and grunt armor (Armor 1, bulky).",
-        },
-    },
-    {
-        "name": "Neural Ramifications",
-        "options": {
-            1: "<b>Draining:</b> You are always so utterly tired. Permanently mark off one inventory slot.",
-            2: "<b>Med-Addicted:</b> You only recover fatigue from staying at a hospital or taking expensive stims (50 C).  Optionally you can heal normally and Save vs. Corruption",
-            3: "<b>Paranoid:</b> <em>“Who’s there?!”</em> Whenever you are surprised or ambushed, you always go last in the first round.",
-            4: "<b>Split Personality:</b> It’s not you who has these brain problems, it’s the other one in your head!",
-            5: "<b>Surly:</b> You come across a little coarse. People of higher social standings naturally don’t like for you.",
-            6: "<b>Empathetic Overtuning:</b> When an ally saves vs. corruption, you do too.",
+            1: """<b>Pipeweed</b> Your good luck charm. Conversations tend to flow more easily after a smoke (6 uses).""",
+            2: """<b>Stink Jar</b> Shattering this jar releases an odor so foul all nearby must
+make a STR save or immediately vomit (1 use).""",
+            3: """<b>Ivy Worm</b> A green worm often mistaken for a weed. Swallowed
+whole, it absorbs any toxins or rot in the body before
+exiting through the usual way.""",
+            4: """<b>Dream Stone</b> A smooth blue stone that helps recall dreams more clearly.
+Overuse can cause dream-addiction.""",
+            5: """<b>Drowning Rod</b> A finger-sized wooden stick that doubles in size each time
+it is fully submerged in water. It doesn’t shrink back down.""",
+            6: """<b>Rabbit’s Foot</b> You were wearing it when they found you. They say it is
+the foot of she who left you, and that it protects you from
+witch magic.""",
         },
     },
     # starting gear
     [
-        "Cheap blaster or small melee weapon",
-        "Fake I.D.",
-        "Adrenaline injection (1)",
-        "Candy bar",
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Salt Pouch",
+        "Heirloom Amulet (<em>petty</em>, glows in the presence of magic)",
+        "Sling (d6)",
+        "Dagger (d6)",
     ],
     # profile
-    """A power within you has awoken. Whether from trauma, an evolving mind, or some
-other key, the locks have started to open on a deep seeded source of power.
-When a psionic character undergoes major stress, trauma, or levels up, consider
-letting them awaken a new power. Optionally, instead of new powers, consider
-evolving the effects of their awakening ability.""",
+    """An odd birthmark, a strange smell: somehow, the touch of elsewhere still lingers.
+You’ll never fit in, at least not where you’re at. Roll on the Omens table, but keep
+the results private for now.""",
+    # names
+    [
+        "Faunus",
+        "Snowdrop",
+        "Wisp",
+        "Silverdew",
+        "Brim",
+        "Solstice",
+        "Steeleye",
+        "Sileas",
+        "Gossamer",
+        "Hazel",
+    ],
 ]
 
 dossier_scientist = [
@@ -715,7 +738,7 @@ BACKGROUND_TABLES = {
     "Cutpurse": cutpurse_tables,
     "Field Warden": field_warden_tables,
     "Fletchwind": fletchwind_tables,
-    "PSIONIC": dossier_psionic,
+    "Foundling": foundling_tables,
     "SCIENTIST": dossier_scientist,
     "SOLDIER": dossier_soldier,
     "STAR-TOUCHED": dossier_star_touched,
