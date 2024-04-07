@@ -7,11 +7,10 @@
 
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">{{char.name}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{char.background}}</h6>
+    <h5 class="card-title">{{char.name}}, {{char.background}}</h5>
     <p>{{char.profile|safe}}</p>
     <div class="row">
-        <div class="col-8">
+
             <table class="table">
             <tr>
                 <th>STR</th>
@@ -28,6 +27,9 @@
                 <td>{{char.age}}</td>
             </tr>
             </table>
+      </div>
+      <div class="row">
+
             <table class="table">
                 <tr>
                   <td>
@@ -47,13 +49,26 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><p><b>Omen</b><br>
+                  <td><p><b>Omen (if youngest character in party)</b><br>
                     {{char.omen|safe}}</p>
                 </td>
               </tr>
             </table>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <table class="table">
+            <tr>
+              <th>Starting gear</th>
+            </tr>
+            <tr><td>
+              <ul>
+              {% for item in char.gear %}<li>{{item|safe}}</li>{% endfor %}
+              </ul></td>
+            </tr>
+          </table>
         </div>
-        <div class="col-4">
+        <div class="col-6">
             <table class="table">
                 <thead>
                     <tr>
@@ -67,17 +82,8 @@
                     </tr>
                 {% endfor %}
                 </table>
-                <table class="table">
-                  <tr>
-                    <th>Starting gear</th>
-                  </tr>
-                  <tr><td>
-                    <ul>
-                    {% for item in char.gear %}<li>{{item|safe}}</li>{% endfor %}
-                    </ul></td>
-                  </tr>
-                </table>
-        </div><!--col-->
+                </div>
+
     </div><!-- row-->
   </div>
 </div>
