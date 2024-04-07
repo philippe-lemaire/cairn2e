@@ -66,3 +66,4 @@ class Character:
             "vice": choice(vice),
         }
         self.name = choice(names)
+        self.age = roll("2d10") + 10
