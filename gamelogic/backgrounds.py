@@ -7,7 +7,7 @@ backgrounds = [
     "Field Warden",
     "Fletchwind",
     "Foundling",
-    "SCIENTIST",
+    "Fungal Forager",
     "SOLDIER",
     "STAR-TOUCHED",
     "BOUNTY HUNTER",
@@ -537,49 +537,63 @@ the results private for now.""",
     ],
 ]
 
-dossier_scientist = [
+fungal_forager_tables = [
     {
-        "name": "Prized Lifetime Research",
+        "name": "What strange fungi did you discover?",
         "options": {
-            1: "<b>Skeletal Resonator:</b> Attract or repel a single target that has a skeleton, unless they pass a STR save. No effect on cartilage.",
-            2: "<b>Portal Generator:</b> Create a portal between two flat sources that you can see. The gate closes if you pass through or break line of sight. Causes 1 fatigue.",
-            3: "<b>Temporal Bomb:</b> Time slows down 60 times in a 20 foot sphere (blast). Lasts for 1 minute outside the sphere, or one second inside. One use.",
-            4: "<b>Corpse Reviver #42:</b> Brings back the dead if used within 1 minute of death. One use.",
-            5: "<b>Particle-Mirror Array:</b> (+1 Armor) A molecular shield generator. Once a day, make a DEX save to reflect energy weapon shots back at their source.",
-            6: "<b>Creature in a Jar:</b> A baby sludge creature with one eye. Upon release, it will eat a corpse’s brain consuming its memories, effectively allowing the user to ask a corpse one question. The fresher the corpse, the better the memory. Needs a day to rest before it will come back out.",
+            1: """<b>Shrieking Trumpet</b>. When exposed to light it screams so loudly that all
+nearby attacks (including your own) are <em>impaired</em> (2 uses).""",
+            2: """<b>Torch Fungus.</b> When crushed it creates a heatless light for ten minutes
+(3 uses).""",
+            3: """<b>Murderous Truffle</b>. Pungent, highly toxic, and very rare (worth 50gp to
+assassins). Illegal pretty much everywhere (1 use).""",
+            4: """<b>Hellcap.</b> Exposure to its aroma causes intense nausea, even vomiting.
+Either way, it clears the room. Bottled (1 use).""",
+            5: """<b>Sproutcup.</b> Ingest to shrink down to the size of a mouse (your belongings
+stay the same size). You return to normal size within the hour, often in fits
+and starts (1 use).""",
+            6: """<b>Rootflower.</b> A white fungus found only on corpses deep underground.
+Ingest to restore d6 WIL. You will dream of the dead, and their stories
+(1 use).""",
         },
     },
     {
-        "name": "Field of Expertise",
+        "name": "What keeps you sane, even in utter darkness?",
         "options": {
-            1: "<b>Medical Doctor:</b> Take medical supplies that can restore 1d4 STR a day.",
-            2: "<b>Molecular Chemist:</b> Take a vial of universal solvent, which dissolves anything it touches.  Enough for a brick-sized portion.  One use.",
-            3: "<b>Experimental Physicist:</b> Take a can of de-friction spray. 3 charges.",
-            4: "<b>Xeno Biology:</b> Take a strange alien Gecko-Fox as a pet. (3hp, 14 DEX, d6 bite, can climb sheer surfaces, must be fed something living once a week)",
-            5: "<b>Toxicology:</b> Years of experimentation, immunity- building & study have provided you an immunity to all known poisons, and reduced effect on failed saves against unknown or alien toxins and poisons.",
-            6: "<b>Higher Dimensions:</b> Prying open the secrets of the universe have exposed you to things you can’t explain. Roll for a random Astromancy.",
-        },
-    },
-    {
-        "name": "Why You Left Science",
-        "options": {
-            1: "<b>Uncouth Research:</b> You dabbled in things that are frowned upon and were run out of academia.  Start with 3 corruption.",
-            2: "<b>Malaise:</b> You wanted new challenges and life in the lab just wasn’t cutting it anymore. Roll a random talent.",
-            3: "<b>Blackmail:</b> A rival researcher, competitor, or criminal organization implied that if you didn’t stop your current research, they’d stop it for you.",
-            4: "<b>Lab Accident:</b> There’s a corporate-sponsored bounty on your head for damage to company property.",
-            5: "<b>Research De-funded:</b> Due to budgetary issues, your research has been placed on permanent hold. Sorry.",
-            6: "<b>Field-Research:</b> You wanted more hands-on experience in your field.",
+            1: """<b>Glowsnail</b> Casts a soft, bioluminescent light. Feeds on one ration every two days.  """,
+            2: """<b>Silk Moth Shawl</b> A weatherproof blanket, it can also douse a fire without being damaged.  """,
+            3: """<b>Milkflower</b> A gentle stimulant. Chewing makes you immune to panic for the next hour (3 uses).  """,
+            4: """<b>Luxcompass</b> Hums softly as it moves closer to the Sun. Eventually, the noise becomes unbearably loud.  """,
+            5: """<b>Sloth-TarpA</b>  tough and weatherproof fabric, useful for hanging off trees. When inside, take +1 Armor.  """,
+            6: """<b>Miner’s Grease</b> Great for dislodging a gem, tool, or limb from a tight crack. Highly explosive (3 uses).  """,
         },
     },
     # starting gear
     [
-        "Lab coat",
-        "Test tubes (6) & assorted medical tools",
-        "Plasma-Knife (D6 thermal, concealable)",
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Sharpened Trowel (d6)",
+        "Candle Helmet (+1 Armor, dim, 6 uses)",
+        "Rope (25ft)",
+        "Metal Pail",
     ],
     # profile
-    """You’ve spent most of your life dedicated to the advancement of science. Due to new
-circumstances, you’ve decided to make the change from lab work to field work.""",
+    """You follow the whisperings of the deep earth, the rhythmic pulse of the mycelium
+forest that grows beneath the surface. The dark holds no terror for you. Also, you
+really love mushrooms.""",
+    # names
+    [
+        "Unther",
+        "Woozy",
+        "Hilda",
+        "Current",
+        "Leif",
+        "Ratan",
+        "Mourella",
+        "Lal",
+        "Per",
+        "Madrigal",
+    ],
 ]
 
 dossier_soldier = [
@@ -739,7 +753,7 @@ BACKGROUND_TABLES = {
     "Field Warden": field_warden_tables,
     "Fletchwind": fletchwind_tables,
     "Foundling": foundling_tables,
-    "SCIENTIST": dossier_scientist,
+    "SCIENTIST": fungal_forager_tables,
     "SOLDIER": dossier_soldier,
     "STAR-TOUCHED": dossier_star_touched,
     "BOUNTY HUNTER": dossier_bounty_hunter,
