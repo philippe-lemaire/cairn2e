@@ -8,7 +8,7 @@ backgrounds = [
     "Fletchwind",
     "Foundling",
     "Fungal Forager",
-    "SOLDIER",
+    "Greenwise",
     "STAR-TOUCHED",
     "BOUNTY HUNTER",
 ]
@@ -564,7 +564,7 @@ Ingest to restore d6 WIL. You will dream of the dead, and their stories
             2: """<b>Silk Moth Shawl</b> A weatherproof blanket, it can also douse a fire without being damaged.  """,
             3: """<b>Milkflower</b> A gentle stimulant. Chewing makes you immune to panic for the next hour (3 uses).  """,
             4: """<b>Luxcompass</b> Hums softly as it moves closer to the Sun. Eventually, the noise becomes unbearably loud.  """,
-            5: """<b>Sloth-TarpA</b>  tough and weatherproof fabric, useful for hanging off trees. When inside, take +1 Armor.  """,
+            5: """<b>Sloth-Tarp</b> A tough and weatherproof fabric, useful for hanging off trees. When inside, take +1 Armor.  """,
             6: """<b>Miner’s Grease</b> Great for dislodging a gem, tool, or limb from a tight crack. Highly explosive (3 uses).  """,
         },
     },
@@ -596,45 +596,69 @@ really love mushrooms.""",
     ],
 ]
 
-dossier_soldier = [
+greenwise_tables = [
     {
-        "name": "Special-Issue Equipment",
+        "name": "How have The Woods failed you?",
         "options": {
-            1: "<b>Gate Cloak:</b> Hooded cloak inscribed with nano-particle algebraic equations that allows the user to phase-shift 10’ in any direction instead of taking damage. One use a day.",
-            2: "<b>Mark IV Executioner:</b> (D8 blast, silencer) A combat shotgun created by a legendary weapons manufacturer - limited run. Replaces starting weapon.",
-            3: "<b>Kinetic Katana:</b> (D8, bulky, thermal) An alien weapon you recovered. Slender black blade sheathed in a metal casing. Vibrates at subsonic levels producing an intense heat and orange glow. On a roll of maximum damage, the target must make a STR save or be fatally severed in half.",
-            4: "<b>RNA-Attuned Shield Generator:</b> (+1 Armor, immune to bio damage) Gene-synthesized custom shield generator. Prevents illness. Take a few cigars too.",
-            5: "<b>Dual-Oculus Hooded Mask:</b> A hooded faceplate mask with two circular smart-display goggles. Allows for perfect vision in darkness and other debris via A.I. aided image sequencing.",
-            6: "<b>Cockatrice Claymores:</b> 3 remote-operated explosives that explode with a gray bio- synthetic dust. (blast 40’) Make a STR save or instantly be turned to stone.",
+            1: """An ill-tempered forest spirit cursed you for stealing, marking you as an
+enemy of their kind. Take a <b>Bezoar Stone</b>. Ingesting it cures any poison
+(1 use, unless retrieved).""",
+            2: """A close friend, swallowed whole. Now you see their face in any tea you
+brew. Take a <b>Soporific Concoction</b> (3 uses).""",
+            3: """You were poisoned, losing your sense of taste and smell. You can now
+withstand noxious fumes, and always carry Antitoxin (2 uses).""",
+            4: """Your radical experiments turned your skin green, and you now gain
+nourishment as a plant. You don’t need <b>rations</b>, but a day without
+sufficient sunlight and water leaves you deprived.""",
+            5: """Your impressive corpseflower won a local contest then promptly killed a
+judge. You fled, but not without the <b>Prize Money (100gp)</b> and a warrant
+for your arrest.""",
+            6: """You created a restorative tincture that also caused accidental infertility.
+Take a <b>Healing Potion</b> that completely restores STR. Only you know of its
+unintended side-effects.""",
         },
     },
     {
-        "name": "Spec-Ops Team",
+        "name": "What keeps you safe while in The Woods?",
         "options": {
-            1: "<b>Infiltration:</b> Stealth unit. Once a day you automatically succeed when prompted to make a Save to move quietly, in shadows, balancing on precarious surfaces, or similar risky actions.",
-            2: "<b>Heavy Marine:</b> Heavy unit, breach specialists. Increase STR to 13 if not currently at 13.",
-            3: "<b>Flash Commando:</b> Light unit, worked in small teams. Re-roll damage rolls of 1.",
-            4: "<b>Shock Trooper:</b> Special weapons drop troopers. Add shock damage to your starting weapon.",
-            5: "<b>Counter-Insurgency:</b> If fighting in small, confined urban spaces, your first attack roll in combat is enhanced if your weapon is suited for close-range (melee, shotgun)",
-            6: "<b>Top Secret Project:</b> You were part of an experimental top- secret project. Start with a bio- aug. Roll augment and re-flavor.",
-        },
-    },
-    {
-        "name": "Squad Job",
-        "options": {
-            1: "<b>Cook:</b> Once a day you can stretch out a single ration to feed the whole party if you spend 10-minutes preparing it with cooking tools.",
-            2: "<b>Negotiator:</b> You can attempt to negotiate mid-combat. Make a WIL save, on a success enemy reaction is improved and the fighting temporarily halts.",
-            3: "<b>Quartermaster:</b> Two extra inventory slots in your backpack.",
-            4: "<b>Scout:</b> You and your group can never be ambushed if you are at full HP.",
-            5: "<b>Demolitions:</b> Take 2 thermal detonators. If you set up an ambush with explosives the damage is enhanced.",
-            6: "<b>Point Man:</b> You have an additional 2 HP when you’re at the front of the marching order.",
+            1: """<b>Amadou</b> A vermillion fungus that catches fire quite easily (3 uses).""",
+            2: """<b>Delphinium</b> Breathe water for up to one hour (1 use, but can be divided into fractional doses).""",
+            3: """<b>Tacky Stalk</b> A woody reed that hardens into a permanent adhesive when chewed (2 uses).""",
+            4: """<b>Wisp Lantern</b> Caged in wrought iron, provides a dim light so long as the wisp is able to feed on nearby pain and fear.""",
+            5: """<b>Seed Bomb</b> A canvas sack filled with seeds that explodes on impact.  d6 damage (<em>blast</em>, 3 uses).""",
+            6: """<b>Briarvine</b> Entangles any creature up to horse size (STR to break free, reusable).""",
         },
     },
     # starting gear
-    ["Tactical fatigues", "Shotgun or Rifle", "Dog tags"],
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Iron Pot",
+        "Root Knife (d6)",
+        "Healing Salve (restores 1d4 STR, 1 use)",
+        """Twine Bauble (<em>petty</em>, <em>Ward</em> once per day),<br>
+<em><b>Ward</b>: A silver circle 50ft across appears on the ground.
+<br>
+Choose one species that cannot cross it</em>.""",
+    ],
     # profile
-    """You’re ex-special ops. Having completed or parting with your duties, new
-opportunities are calling your name.""",
+    """You delve deep into <b>The Woods</b>, prying its secrets from between rough boughs
+and whispering leaves. In this verdant kingdom, you are no mere scholar, but its
+confidant as well.""",
+    # names
+    [
+        "Briar",
+        "Moss",
+        "Fern",
+        "Lichen",
+        "Root",
+        "Willow",
+        "Sage",
+        "Yarrow",
+        "Rowan",
+        "Ash",
+    ],
 ]
 
 
@@ -753,8 +777,8 @@ BACKGROUND_TABLES = {
     "Field Warden": field_warden_tables,
     "Fletchwind": fletchwind_tables,
     "Foundling": foundling_tables,
-    "SCIENTIST": fungal_forager_tables,
-    "SOLDIER": dossier_soldier,
+    "Fungal Forager": fungal_forager_tables,
+    "Greenwise": greenwise_tables,
     "STAR-TOUCHED": dossier_star_touched,
     "BOUNTY HUNTER": dossier_bounty_hunter,
 }
