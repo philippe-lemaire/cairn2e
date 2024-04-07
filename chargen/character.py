@@ -15,6 +15,7 @@ from gamelogic.finishing_touches import (
     last_names,
 )
 from gamelogic.bounds import bounds
+from gamelogic.omens import omens
 from random import choice, sample
 
 
@@ -50,6 +51,9 @@ class Character:
             if self.background != "Field Warden"
             else "<br><br>".join(sample(bounds, 2))
         )
+        self.omen = choice(omens)
+        if self.background == "Foundling":
+            self.omen = f"(<em>Secret</em>) {self.omen}"
 
         self.finishing_touches = {
             "physique": choice(physique),

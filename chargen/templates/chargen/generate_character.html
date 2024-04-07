@@ -44,7 +44,11 @@
                       {{char.bound|safe}}</p>
                   </td>
                 </tr>
-
+                <tr>
+                  <td><p><b>Omen</b><br>
+                    {{char.omen|safe}}</p>
+                </td>
+              </tr>
             </table>
         </div>
         <div class="col-4">
@@ -61,18 +65,18 @@
                     </tr>
                 {% endfor %}
                 </table>
-
+                <table class="table">
+                  <tr>
+                    <th>Starting gear</th>
+                  </tr>
+                  <tr><td>
+                    <ul>
+                    {% for item in char.gear %}<li>{{item|safe}}</li>{% endfor %}
+                    </ul></td>
+                  </tr>
+                </table>
         </div><!--col-->
-
     </div><!-- row-->
-
-  <h4>Starting gear</h4>
-
-  <ul>
-  {% for item in char.gear %}<li>{{item|safe}}</li>{% endfor %}
-
-  </ul>
-
   </div>
 </div>
 
