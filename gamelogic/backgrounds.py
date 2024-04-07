@@ -10,6 +10,7 @@ backgrounds = [
     "Fungal Forager",
     "Greenwise",
     "Half Witch",
+    "Hexenbane",
 ]
 
 aurifex_tables = [
@@ -44,8 +45,8 @@ aurifex_tables = [
         "Protective Gloves (petty)",
     ],
     # profile
-    """You are an artisan of the arcane, a smith of subtle forces. In the crucible of your
-workshop, the laws that govern this world are warped to suit your needs.""",
+    """You are an artisan of the arcane, a smith of subtle forces.
+    <br>In the crucible of your workshop, the laws that govern this world are warped to suit your needs.""",
     # names
     [
         "Hestia",
@@ -87,19 +88,18 @@ are within sight of it.""",
     {
         "name": "What rare tool is essential to your work?",
         "options": {
-            1: """Regrowth
-SalveRegrows a body part over the course of a day (1 use).""",
-            2: """GraftgrubA small worm that can fuse inanimate objects with parts
+            1: """<b>Regrowth Salve</b> Regrows a body part over the course of a day (1 use).""",
+            2: """<b>Graftgrub</b> A small worm that can fuse inanimate objects with parts
 of the body (1 use).""",
-            3: """WoundwaxHeals wounds from fire or chemicals (restoring full STR),
+            3: """<b>Woundwax</b> Heals wounds from fire or chemicals (restoring full STR),
 but nothing else (2 uses).""",
-            4: """QuicksilverA stimulant. Go first in combat, and automatically pass any
+            4: """<b>Quicksilver</b> A stimulant. Go first in combat, and automatically pass any
 WIL saves for one hour. Addictive: Save STR or become
 deprived after 24 hours without it (4 uses).""",
-            5: """Pneuma
-PumpPortable iron lungs (bulky). Enables life-saving surgery, or
+            5: """<b>Pneuma
+Pump</b> Portable iron lungs (bulky). Enables life-saving surgery, or
 underwater breathing.""",
-            6: """LodestoneDraws out dangerous elements from the body, and acts as
+            6: """<b>Lodestone</b> Draws out dangerous elements from the body, and acts as
 a powerful magnetic force.""",
         },
     },
@@ -115,7 +115,7 @@ a powerful magnetic force.""",
     ],
     # profile
     """You walk the line between healer and harrower, knowing the frailty of the flesh
-but also the secrets that lay within. With the right tools, life and death are merely
+but also the secrets that lay within.<br>With the right tools, life and death are merely
 words.""",
     # names
     [
@@ -178,8 +178,8 @@ etc.). Add a Fatigue each time.""",
         "Rope (25ft)",
     ],
     # profile
-    """You alone can walk among the creatures of the wild, fearless and in control. You
-share a connection with animals that others can only dream of...so long as you
+    """You alone can walk among the creatures of the wild, fearless and in control.
+    <br>You share a connection with animals that others can only dream of...so long as you
 don’t become their snack.""",
     # names
     [
@@ -232,7 +232,7 @@ Fill the bucket with the blood of a dying warrior.""",
 The Detect Magic <b>Spellbook</b>, stolen from an ancient library. Your family
 worked in service to an obscure underworld deity, but you lost your faith.
 Though exiled, you continue to serve, even as an apostate.
-<em><b>Detect Magic</b></em>: You can see or hear nearby magical auras.""",
+<em><b>Detect Magic</b>: You can see or hear nearby magical auras</em>.""",
             6: """
 A <b>Plague Doctor’s Mask</b>, after its owner succumbed to the disease that
 wiped out everyone you once knew. They should have kept it on.""",
@@ -249,7 +249,7 @@ wiped out everyone you once knew. They should have kept it on.""",
     ],
     # Profile
     """You are a shepherd to the departed. You listen to the final whispers of the dead as
-they descend into the cold, unyielding earth. You know that to fully celebrate the
+they descend into the cold, unyielding earth.<br>You know that to fully celebrate the
 gift of life, we must honor its finale as well.""",
     # names
     [
@@ -716,8 +716,7 @@ released (1 use).""",
     ],
     # profile
     """Born of both the mortal world and the unseen, a crossing of veils that makes you
-an enigma to many. You are both a conduit and a caution of what happens when
-two worlds collide.""",
+an enigma to many.<br>You are both a conduit and a caution of what happens when two worlds collide.""",
     # names
     [
         "Solena",
@@ -734,21 +733,80 @@ two worlds collide.""",
 ]
 
 
-template_tables = [
+hexenbane_tables = [
     {
-        "name": "What Keeps You Safe on the Streets?",
-        "options": {},
+        "name": "To which order do you belong?",
+        "options": {
+            1: """<b>Order of the Crossroads</b>. Take a <b>Pocket Leyfinder</b>. It points to nearby ley
+lines and other sources of arcane power. If you lose it, the punishment is
+death.""",
+            2: """<b>Order of the Bleeding Star</b>. Take a <b>Star-Iron mace (d8)</b>. It shines faintly in
+darkness, and becomes very hot in the presence of witchcraft.""",
+            3: """<b>Order of the Glass Sigil</b>. Take a <b>Short Sword (d8)</b> and Chainmail</b> (2 Armor,
+<em>bulky</em>). You have contacts in most towns (the more rural, the better)
+willing to provide aid, food, or even weapons.""",
+            4: """<b>Order of the Blank Eye</b>. Take a <b>Voidglass Shard</b>. Peer through it to see
+invisible marks, creatures, and other magical effects.
+Lose the use of your eye for an hour afterwards (you are <em>deprived</em>).""",
+            5: """<b>Order of Canaas</b>. Once per day you can change into a wolf. Take a <b>Quicksilver Chain</b>. Without it, you are unable to shift back.""",
+            6: """<b>Order of the Silent Veil</b>. Take a <b>Quell Stone</b> (2 uses) wrapped in burlap.
+Extinguishes any nearby flames once exposed to air.""",
+        },
     },
     {
-        "name": "Type of Scum",
-        "options": {},
+        "name": "What was your vow?",
+        "options": {
+            1: """<b>Honesty</b>
+Choose a weapon type (blunt, blade, etc). Attacks against
+you of this type are impaired. If your vow is broken, you
+lose d4 WIL.""",
+            2: """<b>Poverty</b>
+You carry the Disassemble Spellbook. Only you can use it.
+If your vow is broken, it explodes (d12 STR damage).
+<br>
+<em><b>Disassemble</b>: Any of your body parts may be detached and
+reattached at will, without causing pain or damage. You can
+still control them.</em> """,
+            3: """Selflessness</b> You are immune to magical effects such as charm, hatred,
+frenzy, and so on. If you break this vow, you lose d6 WIL.""",
+            4: """<b>Mercy</b> Choose a weapon type (blunt, blade, etc). Attacks with
+this weapon are enhanced. If your vow is broken, you can
+never use that weapon type again.""",
+            5: """<b>Charity</b> Once per day you can shrug off a Fatigue. If your vow is
+ever broken, you permanently lose one inventory slot.""",
+            6: """<b>ValorT</b> he first time you inflict Critical Damage you receive d4
+HP, returning to the previous limit at the end of combat. If
+your vow is broken, you die.""",
+        },
     },
     # starting gear
-    [],
+    [
+        "3d6 Gold Pieces",
+        "Rations (3 uses)",
+        "Torch (3 uses)",
+        "Vestments of the Order (<em>petty</em>)",
+        "Blessed Tinctures",
+        "Silver Knife (d6)",
+        "Crossbow (d8, <em>bulky</em>)",
+    ],
     # profile
-    """""",
+    """
+    You are a mere digit on the unerring hand of justice. You go where others fear to
+tread, unyielding and unbroken.
+    """,
     # names
-    [],
+    [
+        "Percival",
+        "Felix",
+        "Isolde",
+        "Wolfram",
+        "Aldric",
+        "Eira",
+        "Oswin",
+        "Ivor",
+        "Brunhilda",
+        "Beatrix",
+    ],
 ]
 
 template_tables = [
@@ -779,4 +837,5 @@ BACKGROUND_TABLES = {
     "Fungal Forager": fungal_forager_tables,
     "Greenwise": greenwise_tables,
     "Half Witch": half_witch_tables,
+    "Hexenbane": hexenbane_tables,
 }
